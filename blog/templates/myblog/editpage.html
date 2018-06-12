@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta>
+        <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<form method="post" action="{% url 'blog:editpagehandle' %}">
+   {% csrf_token %}
+    标题:<input type="text" name="title"><br>
+    内容:<br><textarea name="content" style="height: 300px;width: 800px"></textarea><br>
+    <input type="submit" value="提交">
+</form>
+</body>
