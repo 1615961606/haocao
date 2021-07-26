@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{background-image: url("/static/meme/5.jpg")}
+        .a{color: bisque}
+        .b{color: beige}
+        .c{color: azure}
+    </style>
+</head>
+<body>
+<h1 class="a">{{ article.atitle  }}</h1>
+<h5 class="b">{{ article.acontent}}</h5><br>
+<a class="c" href="{% url 'blog:editpage'%}">返回编辑页面</a>
+</body>
+</html>
